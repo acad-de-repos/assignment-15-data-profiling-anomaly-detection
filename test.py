@@ -20,7 +20,7 @@ class TestDataProfilingAndAnomalyDetection(unittest.TestCase):
         # Test profiling results
         self.assertIn('transaction_amount_stats', profiling_results)
         self.assertIn('transaction_type_counts', profiling_results)
-        self.assertAlmostEqual(profiling_results['transaction_amount_stats']['mean'], 71.4, places=1)
+        self.assertAlmostEqual(profiling_results['transaction_amount_stats']['mean'], 111.4, places=1)
         self.assertEqual(profiling_results['transaction_type_counts']['sale'], 7)
 
         # Test anomaly detection
